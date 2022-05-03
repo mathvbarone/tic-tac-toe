@@ -1,0 +1,8 @@
+src/
+.eslintrc.js
+tsconfig.json
+yarn.lock
+node_modules
+version-bin
+version-tool-meta.ini
+.watchmanconfig

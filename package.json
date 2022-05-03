@@ -1,0 +1,67 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "Tic tac toe project",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
+    "test": "NODE_ENV=test jest",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "clean": "rm -rf dist build"
+  },
+  "devDependencies": {
+    "@testing-library/react-hooks": "^7.0.2",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.7",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "esbuild": "^0.13.13",
+    "eslint": "^8.2.0",
+    "jest": "^27.3.1",
+    "jest-junit": "^13.0.0",
+    "prettier": "^2.4.1",
+    "react": "^18.1.0",
+    "react-test-renderer": "18.1.0",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.6.4"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text-summary",
+      "cobertura"
+    ],
+    "reporters": [
+      "default",
+      "jest-junit"
+    ]
+  },
+  "keywords": [
+    "typescript",
+    "react"
+  ],
+  "author": "Matheus Barone",
+  "license": "MIT",
+  "dependencies": {
+    "react-dom": "^18.1.0",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
